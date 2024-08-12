@@ -44,10 +44,10 @@ class _StepWidgetBuilder {
     if (leftArea > rightArea) {
       position.right = rightArea <= 0 ? 16.0 : rightArea;
       position.crossAxisAlignment = CrossAxisAlignment.end;
-      position.width = min(leftArea + width - 16, screenWidth * 0.618);
+      position.width = min(leftArea + width - 16, screenWidth * 0.9);
     } else {
       position.left = offset.dx <= 0 ? 16.0 : offset.dx;
-      position.width = min(rightArea + width - 16, screenWidth * 0.618);
+      position.width = min(rightArea + width - 16, screenWidth * 0.9);
     }
 
     /// The distance on the right side is very large, it is more beautiful on
